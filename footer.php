@@ -30,7 +30,7 @@ $(document).ready( function () {
             ] }
     );
 
-    $('#ceremoniesTable').DataTable( {
+    $('#agileTeamsTable').DataTable( {
         dom: 'Bfrtip',
         buttons: [
             'copy', 'excel', 'csv', 'pdf'

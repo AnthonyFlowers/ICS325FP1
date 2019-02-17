@@ -3,6 +3,7 @@
 
   $query = "SELECT * FROM trains_and_teams";
   $GLOBALS['tableResults'] = mysqli_query($db, $query);
+  $GLOBALS['agileTeamsResults'] = mysqli_query($db, $query);
 
 ?>
 
@@ -24,8 +25,8 @@
           </thead>
           <tbody>
             <?php
-              if ($tableResults->num_rows > 0){
-                while($row = $tableResults->fetch_assoc()){
+              if ($agileTeamsResults->num_rows > 0){
+                while($row = $agileTeamsResults->fetch_assoc()){
                   echo '<tr>
                           <td>'.$row['team_id'].'</td>
                           <td>'.$row["team_name"].'</td>
