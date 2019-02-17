@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `cadence`
 --
 
-CREATE TABLE `cadence` (
+CREATE TABLE IF NOT EXISTS `cadence` (
   `sequence` int(11) NOT NULL,
   `PI_id` varchar(255) NOT NULL,
   `iteration_id` varchar(255) NOT NULL,
@@ -46,7 +46,7 @@ CREATE TABLE `cadence` (
 -- Table structure for table `trains_and_teams`
 --
 
-CREATE TABLE `trains_and_teams` (
+CREATE TABLE IF NOT EXISTS `trains_and_teams` (
   `team_id` varchar(50) NOT NULL,
   `team_name` varchar(55) NOT NULL,
   `parent_name` varchar(55) DEFAULT NULL,
