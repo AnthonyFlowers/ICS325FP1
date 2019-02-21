@@ -34,12 +34,12 @@ $(document).ready( function () {
     );
 
     $('#agileTeamsTable').DataTable( {
-        dom: 'Bfrtip',
+        dom: 'Blfrtip',
         buttons: [
             'copy', 'excel', 'csv', 'pdf'
-        ] }
+        ]}
     );
-} );
+});
 </script>
 
 </body>
